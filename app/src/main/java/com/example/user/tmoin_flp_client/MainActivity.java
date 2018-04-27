@@ -49,8 +49,8 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
                 .build();
 
         mLocationRequest = new LocationRequest();
+        mLocationRequest.setFastestInterval(30 * 1000);
         mLocationRequest.setFastestInterval(10 * 1000);
-        mLocationRequest.setFastestInterval(1 * 1000);
         mLocationRequest.setPriority(LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY);
 
 
