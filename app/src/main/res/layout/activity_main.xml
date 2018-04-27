@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mes coordonnées GPS"
+        android:layout_centerHorizontal="true"
+        android:textSize="24dp"
+        android:textColor="#fd0707"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+      />
+
+    <TextView
+        android:id="@+id/tvLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude"
+        android:layout_centerVertical="true"
+        android:textSize="18dp"
+        android:textColor="#0d10cc"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <View
+        android:id="@+id/a"
+        android:layout_below="@+id/tvLatitude"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#aca8a8" />
+
+    <TextView
+        android:id="@+id/tvLongitude"
+        android:layout_below="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude"
+        android:layout_centerVertical="true"
+        android:textSize="18dp"
+        android:textColor="#0d10cc"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <View
+        android:id="@+id/b"
+        android:layout_below="@+id/tvLongitude"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#aca8a8" />
+
+    <TextView
+        android:id="@+id/tvAltitude"
+        android:layout_below="@+id/b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Altitude"
+        android:layout_centerVertical="true"
+        android:textSize="18dp"
+        android:textColor="#0d10cc"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <View
+
+        android:layout_below="@+id/tvAltitude"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#aca8a8" />
+
+    <Button
+        android:id="@+id/tvButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAltitude"
+        android:layout_centerHorizontal="true"
+        android:text="Refresh"
+        android:layout_margin="40dp"/>
+
+</RelativeLayout>
